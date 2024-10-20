@@ -17,6 +17,16 @@
     --dark-gray: #e4e8ec;
     --purple-blue: #3d1b7e;
     --dark-navy: #00234b;
+    --tropical-teal: #23927e;
+    --electric-azure: #1260fd;
+    --neon-lime: #cdf800;
+    --deep-indigo: #160f50;
+    --cool-violet: #5d60dc;
+    --golden-yellow: #fcc806;
+    --sky-blue: #50bbe9;
+    --vivid-purple: #5a05ff;
+    --light-pink: #ffe8e0;
+    --soft-red: #fd6161;
   }
 }
 
@@ -30,4 +40,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
 }

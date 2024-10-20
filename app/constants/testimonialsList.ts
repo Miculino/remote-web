@@ -18,6 +18,7 @@ export const TESTIMONIALS_LIST = [
       "We see Remote as a leading partner in this space. The spacialist local payroll, tax, compliance, and HR operations support they provide gives us more opportunities.",
     full_testimonial_link: "https://remote.com/blog/remote-semrush",
     logo: SemrushLogo,
+    company: "semrush",
   },
   {
     name: "Daniel Chiha",
@@ -26,6 +27,7 @@ export const TESTIMONIALS_LIST = [
       "We wanted a global HR solution that successfully consolidates global teams without having to make sacrifices. Remote is that provider by design.",
     full_testimonial_link: "https://remote.com/blog/remote-shootsta",
     logo: ShootstaLogo,
+    company: "shootsta",
   },
   {
     name: "Luke McKinlay",
@@ -34,6 +36,7 @@ export const TESTIMONIALS_LIST = [
       "If we had to coordinate everything in-house, it would cost upwards of $500,000 extra per year. Remote takes that burden off of our plate.",
     full_testimonial_link: "https://remote.com/blog/remote-fountain",
     logo: FountainLogo,
+    company: "fountain",
   },
   {
     name: "Marisol Jimenez",
@@ -43,6 +46,7 @@ export const TESTIMONIALS_LIST = [
     full_testimonial_link:
       "https://remote.com/resources/case-studies/remote-reverse-tech",
     logo: ReverseTechLogo,
+    company: "reverse-tech",
   },
   {
     name: "Jessie de Groot",
@@ -52,6 +56,7 @@ export const TESTIMONIALS_LIST = [
     full_testimonial_link:
       "https://remote.com/resources/case-studies/remote-weaviate",
     logo: WeaviateLogo,
+    company: "weaviate",
   },
   {
     name: "Kayleigh Smart",
@@ -60,6 +65,7 @@ export const TESTIMONIALS_LIST = [
       "The level of trust and transparency with Remote felt quite different from some of the other pricing conversations that I have had in the past. Remote is genuinely interested in optimizing our business, and igiving us the best pricing models and plans for our needs.",
     full_testimonial_link: "https://remote.com/blog/remote-pento",
     logo: PentoLogo,
+    company: "pento",
   },
   {
     name: "Mona Walther",
@@ -68,6 +74,7 @@ export const TESTIMONIALS_LIST = [
       "Remote has been instrumental in our growth. It would have been impossible to manage such a high volume of hires without their support. They provide the whole package.",
     full_testimonial_link: "https://remote.com/blog/remote-commercetools",
     logo: CommercetoolsLogo,
+    company: "commercetools",
   },
   {
     name: "Jeroen Rutten",
@@ -76,6 +83,7 @@ export const TESTIMONIALS_LIST = [
       "Having a specialist to settle HR and compliance processes makes it easier for my team to focus solely on expanding the business.",
     full_testimonial_link: "https://remote.com/blog/remote-tablevibe",
     logo: TablevibeLogo,
+    company: "tablevibe",
   },
   {
     name: "Onur Kasaba",
@@ -84,6 +92,7 @@ export const TESTIMONIALS_LIST = [
       "We're a publicly listed company, so we needed the stability and reliability of a well-known brand to help us scale; with the support, roadmap, and ability to ensure full legal compliance wherever we wanted to hire. Remote immediately ticked all those boxes.",
     full_testimonial_link: "https://remote.com/blog/remote-tele2-iot",
     logo: null,
+    company: "tele2",
   },
   {
     name: "Amador Pilapil",
@@ -92,6 +101,7 @@ export const TESTIMONIALS_LIST = [
       "What sets Remote apart from all other providers is that it is 100% scalable and reliable. It's simple to hire, onboard, maange, and pay our global workforce.",
     full_testimonial_link: "https://remote.com/blog/remote-fluz",
     logo: FluzLogo,
+    company: "fluz",
   },
   {
     name: "Erik Sveen",
@@ -101,5 +111,6 @@ export const TESTIMONIALS_LIST = [
     full_testimonial_link:
       "https://remote.com/blog/how-to-onboard-and-pay-hundreds-of-global-contractors-with-ease",
     logo: HomeProjectLogo,
+    company: "homeproject",
   },
 ];

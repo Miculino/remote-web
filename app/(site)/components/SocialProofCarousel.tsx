@@ -18,19 +18,19 @@ const responsive = {
     breakpoint: { max: 3000, min: 1024 },
     items: 2,
     slidesToSlide: 1,
-    partialVisibilityGutter: 0,
+    partialVisibilityGutter: 100,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
     slidesToSlide: 1,
-    partialVisibilityGutter: 0,
+    partialVisibilityGutter: 160,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
     slidesToSlide: 1,
-    partialVisibilityGutter: 0,
+    partialVisibilityGutter: 60,
   },
 };
 
@@ -43,15 +43,16 @@ export default function SocialProofCarousel() {
     <Carousel
       draggable
       swipeable
-      centerMode
       infinite
       focusOnSelect
       responsive={responsive}
       ssr
+      centerMode
       removeArrowOnDeviceType={["mobile", "tablet", "desktop"]}
       afterChange={(previousSlide, { currentSlide }) =>
         setActiveIndex(currentSlide)
       }
+      className="carousel-container"
     >
       {TESTIMONIALS_LIST.map((testimonialItem, index) => (
         <SocialProofCard
@@ -61,6 +62,7 @@ export default function SocialProofCarousel() {
           testimonial={testimonialItem.testimonial}
           link={testimonialItem.full_testimonial_link}
           logo={testimonialItem.logo}
+          company={testimonialItem.company}
         />
       ))}
     </Carousel>
