@@ -18,8 +18,8 @@ export default function ReverseTechLogo({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.0"
-        width="720.000000pt"
-        height="160.000000pt"
+        width="180px"
+        height="40px"
         viewBox="0 0 720.000000 160.000000"
         preserveAspectRatio="xMidYMid meet"
         aria-hidden="true"

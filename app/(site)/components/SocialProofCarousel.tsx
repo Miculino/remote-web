@@ -2,12 +2,16 @@
 
 // React
 import { useState } from "react";
+
 // Components
 import SocialProofCard from "./SocialProofCard";
 
 // React Multi Carousel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+// Constants
+import { TESTIMONIALS_LIST } from "@/app/constants/testimonialsList";
 
 const responsive = {
   desktop: {
@@ -49,12 +53,16 @@ export default function SocialProofCarousel() {
         setActiveIndex(currentSlide)
       }
     >
-      <SocialProofCard />
-      <SocialProofCard />
-      <SocialProofCard />
-      <SocialProofCard />
-      <SocialProofCard />
-      <SocialProofCard />
+      {TESTIMONIALS_LIST.map((testimonialItem, index) => (
+        <SocialProofCard
+          key={index}
+          name={testimonialItem.name}
+          avatar={testimonialItem.avatar}
+          testimonial={testimonialItem.testimonial}
+          link={testimonialItem.full_testimonial_link}
+          logo={testimonialItem.logo}
+        />
+      ))}
     </Carousel>
   );
 }
