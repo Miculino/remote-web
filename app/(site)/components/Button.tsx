@@ -5,7 +5,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import clsx from "clsx";
 
 // Icons
-import ArrowIcon from "@/app/icons/ArrowIcon";
+import ArrowIcon from "@/app/svg/ArrowIcon";
 
 const button = cva("rounded-full p-3 flex", {
   variants: {

@@ -1,5 +1,5 @@
 // React
-import React, { SVGProps } from "react";
+import { SVGProps } from "react";
 // CLSX
 import clsx from "clsx";
 

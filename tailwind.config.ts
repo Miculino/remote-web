@@ -14,6 +14,9 @@ const config: Config = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         "dark-gray": "var(--dark-gray)",
+        "dark-blue": "var(--dark-blue)",
+        "purple-blue": "var(--purple-blue)",
+        "dark-navy": "var(--dark-navy)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",

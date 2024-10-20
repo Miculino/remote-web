@@ -1,5 +1,6 @@
 // Layout
 import Hero from "./layout/Hero";
+import SocialProof from "./layout/SocialProof";
 
 // Components
 import GlobalCompanies from "./components/GlobalCompanies";
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <GlobalCompanies />
+      <SocialProof />
     </>
   );
 }
