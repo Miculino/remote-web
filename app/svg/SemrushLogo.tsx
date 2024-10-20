@@ -9,7 +9,6 @@ interface SemrushLogo extends SVGProps<SVGSVGElement> {
 }
 
 export default function SemrushLogo({
-  pathStrokes,
   pathFills,
   className,
   ...props
