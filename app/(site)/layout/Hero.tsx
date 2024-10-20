@@ -1,6 +1,9 @@
 // Next
 import Image from "next/image";
 
+// Components
+import Button from "../components/Button";
+
 export default function Hero() {
   return (
     <section className="bg-[url('/Hero_BG.webp')] relative text-center lg:text-left bg-center w-full bg-cover px-5 py-32 flex items-center lg:p-40 lg:pb-50 justify-center lg:justify-start">
@@ -20,7 +23,7 @@ export default function Hero() {
             success.
           </p>
           <div className="flex items-center gap-8 mx-auto lg:mx-0">
-            <button>Get Started</button>
+            <Button intent={"secondary"} label="Get Started" />
             <Image src={"/G2_Fall_Leader.svg"} width={168} height={43} alt="" />
           </div>
         </div>
