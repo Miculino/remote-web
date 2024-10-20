@@ -34,6 +34,19 @@ const responsive = {
   },
 };
 
+type CompanyTypes =
+  | "semrush"
+  | "shootsta"
+  | "fountain"
+  | "reverse-tech"
+  | "weaviate"
+  | "pento"
+  | "commercetools"
+  | "tablevibe"
+  | "tele2"
+  | "fluz"
+  | "homeproject";
+
 export default function SocialProofCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -42,7 +55,6 @@ export default function SocialProofCarousel() {
   return (
     <Carousel
       draggable
-      swipeable
       infinite
       focusOnSelect
       responsive={responsive}
@@ -62,7 +74,7 @@ export default function SocialProofCarousel() {
           testimonial={testimonialItem.testimonial}
           link={testimonialItem.full_testimonial_link}
           logo={testimonialItem.logo}
-          company={testimonialItem.company}
+          company={testimonialItem.company as CompanyTypes}
         />
       ))}
     </Carousel>

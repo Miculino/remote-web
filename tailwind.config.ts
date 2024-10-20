@@ -27,6 +27,7 @@ const config: Config = {
         fluz: "var(--light-pink)",
         homeproject: "var(--soft-red)",
         "dark-navy": "var(--dark-navy)",
+        link: "var(--vibrant-purple)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",
