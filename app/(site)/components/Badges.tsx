@@ -6,7 +6,7 @@ import { BADGES } from "@/app/constants/badges";
 
 export default function Badges() {
   return (
-    <div className="flex items-center gap-4 flex-wrap mx-auto">
+    <div className="flex items-center justify-center gap-4 flex-wrap mx-auto">
       {BADGES.map((badge, index) => (
         <Image
           key={index}

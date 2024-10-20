@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Ratings() {
   return (
-    <div className="flex items-center gap-8 justify-center">
+    <div className="flex items-center flex-wrap gap-8 justify-center">
       <Image
         src={"/TrustPilot_Stars.svg"}
         alt="TrustPilot Stars Rating"
