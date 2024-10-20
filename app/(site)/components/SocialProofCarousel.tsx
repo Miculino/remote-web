@@ -1,16 +1,9 @@
 "use client";
 
-// React
-import { useState } from "react";
-
-// Components
+import { useState, useEffect } from "react";
 import SocialProofCard from "./SocialProofCard";
-
-// React Multi Carousel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-// Constants
 import { TESTIMONIALS_LIST } from "@/app/constants/testimonialsList";
 
 const responsive = {
@@ -20,17 +13,10 @@ const responsive = {
     slidesToSlide: 1,
     partialVisibilityGutter: 100,
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 1,
-    partialVisibilityGutter: 160,
-  },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 1024, min: 0 },
     items: 1,
     slidesToSlide: 1,
-    partialVisibilityGutter: 60,
   },
 };
 
@@ -49,8 +35,17 @@ type CompanyTypes =
 
 export default function SocialProofCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
-  console.log(activeIndex);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Carousel
@@ -59,7 +54,7 @@ export default function SocialProofCarousel() {
       focusOnSelect
       responsive={responsive}
       ssr
-      centerMode
+      centerMode={isLargeScreen}
       removeArrowOnDeviceType={["mobile", "tablet", "desktop"]}
       afterChange={(previousSlide, { currentSlide }) =>
         setActiveIndex(currentSlide)
