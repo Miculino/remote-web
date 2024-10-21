@@ -22,7 +22,7 @@ export default function Hero() {
             one intuitive platform. Transform your ambitious visions into global
             success.
           </p>
-          <div className="flex items-center gap-8 mx-auto lg:mx-0">
+          <div className="flex flex-col md:flex-row items-center gap-8 mx-auto lg:mx-0">
             <Button intent={"secondary"} label="Get Started" />
             <Image src={"/G2_Fall_Leader.svg"} width={168} height={43} alt="" />
           </div>
