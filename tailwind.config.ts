@@ -16,6 +16,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "var(--primary)",
+        "primary-hover": "var(--primary-hover)",
         secondary: "var(--secondary)",
         "dark-gray": "var(--dark-gray)",
         "dark-blue": "var(--dark-blue)",

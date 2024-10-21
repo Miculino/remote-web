@@ -2,7 +2,7 @@
 import Hero from "./layout/Hero";
 import SocialProof from "./layout/SocialProof";
 import ProductShowcase from "./layout/ProductShowcase";
-import ProductHighlightDemo from "./layout/ProductHighlightDemo";
+import ProductHighlightDemo from "./layout/ProductHighlights";
 
 // Components
 import GlobalCompanies from "./components/GlobalCompanies";
@@ -14,6 +14,7 @@ export default function Home() {
       <GlobalCompanies />
       <SocialProof />
       <ProductShowcase />
+      <ProductHighlightDemo />
       <ProductHighlightDemo />
     </>
   );

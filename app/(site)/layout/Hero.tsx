@@ -23,7 +23,7 @@ export default function Hero() {
             success.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-8 mx-auto lg:mx-0">
-            <Button intent={"secondary"} label="Get Started" />
+            <Button arrow intent={"secondary"} label="Get Started" />
             <Image src={"/G2_Fall_Leader.svg"} width={168} height={43} alt="" />
           </div>
         </div>
