@@ -32,6 +32,10 @@
     --payroll: #00b568;
     --payroll-light: #00b568;
     --employer-of-record: rgb(5, 100, 255);
+    --hr-management: #ff817b;
+    --contractor-management: #00b568;
+    --remote-talent: #e03d5c;
+    --remote-apis: #5a05ff;
   }
 }
 

@@ -36,6 +36,10 @@ const config: Config = {
         "green-primary": "var(--green-primary)",
         payroll: "var(--payroll)",
         "employer-of-record": "var(--employer-of-record)",
+        "hr-management": "var(--hr-management)",
+        "contractor-management": "var(--contractor-management)",
+        "remote-talent": "var(--remote-talent)",
+        "remote-apis": "var(--remote-apis)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",

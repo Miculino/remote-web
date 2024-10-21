@@ -6,6 +6,7 @@ import ProductHighlightCard from "../components/ProductShowcaseCard";
 
 // Constants
 import { PRODUCT_HIGHLIGHTS_LIST } from "@/app/constants/productShowcaseList";
+import Subheading from "../components/Subheading";
 
 type FeatureTypes = "payroll" | "employer-of-record";
 
@@ -22,9 +23,7 @@ export default function ProductShowcase() {
       </div>
       <div className="relative z-10 flex flex-col gap-12">
         <div className="text-dark-navy flex flex-col gap-6">
-          <h2 className="font-crimson text-[min(40px,_20px_+_1vw)]">
-            Payroll Anywhere
-          </h2>
+          <Subheading>Payroll Anywhere</Subheading>
           <p className="font-poppins text-[min(20px,_16px_+_0.16vw)] md:max-w-[50%] font-normal">
             Run payroll seamlessly across borders with timely and compliant
             payments to your entire team, no matter where they&apos;re located.

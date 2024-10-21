@@ -11,7 +11,7 @@ import GridPatternRight from "@/app/svg/GridPatternRight";
 
 export default function NavatticPlayer() {
   return (
-    <div className="mr-30 relative pb-60 -mb-96 z-10">
+    <div className=" relative pb-60 -mb-96 z-10">
       <div className="absolute bottom-0 -translate-y-40 lg:-translate-y-10 left-20 flex gap-8 -z-1">
         <DottedArrow className="opacity-50 h-40" />
         <DottedArrow />
@@ -24,7 +24,7 @@ export default function NavatticPlayer() {
           <div className="lg:border-[16px] border-8 border-[#EFF3FF] rounded-3xl">
             <div className="rounded-3xl">
               <iframe
-                className="w-full aspect-video rounded-2xl"
+                className="w-full h-auto aspect-video rounded-2xl"
                 src="https://remote.navattic.com/vk830kbm"
               />
             </div>
