@@ -13,6 +13,7 @@ export default function Home() {
       <GlobalCompanies />
       <SocialProof />
       <ProductHighlightsDemo />
+      <div className="h-screen w-full bg-white relative z-1"></div>
     </>
   );
 }

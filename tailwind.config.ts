@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "payroll-radial":
+          "radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 60%, rgb(0, 181, 104) 100%)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -28,6 +32,9 @@ const config: Config = {
         homeproject: "var(--soft-red)",
         "dark-navy": "var(--dark-navy)",
         link: "var(--vibrant-purple)",
+        "green-primary": "var(--green-primary)",
+        payroll: "var(--payroll)",
+        "employer-of-record": "var(--employer-of-record)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",

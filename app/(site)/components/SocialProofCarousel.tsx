@@ -47,6 +47,8 @@ export default function SocialProofCarousel() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  console.log(activeIndex);
+
   return (
     <Carousel
       draggable
