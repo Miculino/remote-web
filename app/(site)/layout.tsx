@@ -10,7 +10,7 @@ const crimsonPro = Crimson_Pro({
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["300", "400"],
+  weight: ["300", "400", "500"],
 });
 
 console.log(poppins, crimsonPro);
