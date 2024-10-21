@@ -15,7 +15,7 @@ export default function Home() {
       <SocialProof />
       <ProductShowcase />
       <ProductHighlightDemo />
-      <ProductHighlightDemo />
+      <div className="h-screen w-full bg-gray-200"></div>
     </>
   );
 }
