@@ -1,4 +1,3 @@
-import MagnifierPlusIcon from "@/app/icons/MagnifierPlusIcon";
 import { SVGProps } from "react";
 
 interface ProductHighlightItemProps {

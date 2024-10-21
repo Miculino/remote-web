@@ -47,11 +47,11 @@ export default function ProductHighlightCard({
 }: ProductHighlightCardProps) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseEnter = () => {
     setIsHovered(true);
   };
 
-  const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseLeave = () => {
     setIsHovered(false);
   };
 
