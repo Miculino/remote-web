@@ -1,10 +1,11 @@
 // Layout
 import Hero from "./layout/Hero";
 import SocialProof from "./layout/SocialProof";
+import ProductShowcase from "./layout/ProductShowcase";
+import ProductHighlightDemo from "./layout/ProductHighlightDemo";
 
 // Components
 import GlobalCompanies from "./components/GlobalCompanies";
-import ProductHighlightsDemo from "./layout/ProductHighlightsDemo";
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <Hero />
       <GlobalCompanies />
       <SocialProof />
-      <ProductHighlightsDemo />
-      <div className="h-screen w-full bg-white relative z-1"></div>
+      <ProductShowcase />
+      <ProductHighlightDemo />
     </>
   );
 }

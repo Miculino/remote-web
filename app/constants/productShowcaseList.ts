@@ -1,4 +1,10 @@
-export const PRODUCT_HIGHLIGHTS_DEMO = [
+// Icons
+import HireIcon from "../icons/HireIcon";
+import MagnifierPlusIcon from "../icons/MagnifierPlusIcon";
+import PayrollIcon from "../icons/PayrollIcon";
+import UserHeartIcon from "../icons/UserHeartIcon";
+
+export const PRODUCT_HIGHLIGHTS_LIST = [
   {
     title: "Payroll",
     url: "https://remote.com/global-hr/global-payroll",
@@ -24,5 +30,32 @@ export const PRODUCT_HIGHLIGHTS_DEMO = [
     ],
     illustration: "/product_showcase/Employer_of_Record_View.svg",
     feature: "employer-of-record",
+  },
+];
+
+export const PRODUCT_HIGHLIGHT_ITEMS = [
+  {
+    title: "Find",
+    description:
+      "The best person for the job could be anywhere in the world. Connect with top jobseekers for your open roles.",
+    icon: MagnifierPlusIcon,
+  },
+  {
+    title: "Hire",
+    description:
+      "Add new employees quickly and in full compliance with local laws. Manage everything from offer to onboarding, all in one place.",
+    icon: HireIcon,
+  },
+  {
+    title: "Pay",
+    description:
+      "Run payroll with confidence across multiple countries, without ever opening a spreadsheet.",
+    icon: PayrollIcon,
+  },
+  {
+    title: "Manage",
+    description:
+      "Store employee data, simplify expenses and time off, and consolidate your HR tools. Everything you need is right here.",
+    icon: UserHeartIcon,
   },
 ];

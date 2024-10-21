@@ -2,14 +2,14 @@
 import Image from "next/image";
 
 // Components
-import ProductHighlightCard from "../components/ProductHighlightCard";
+import ProductHighlightCard from "../components/ProductShowcaseCard";
 
 // Constants
-import { PRODUCT_HIGHLIGHTS_DEMO } from "@/app/constants/productShowcaseList";
+import { PRODUCT_HIGHLIGHTS_LIST } from "@/app/constants/productShowcaseList";
 
 type FeatureTypes = "payroll" | "employer-of-record";
 
-export default function ProductHighlightsDemo() {
+export default function ProductShowcase() {
   return (
     <section className="bg-gray-100 text-black pt-40 px-5 lg:px-56 relative">
       <div className="absolute top-0 right-0 z-0">
@@ -31,7 +31,7 @@ export default function ProductHighlightsDemo() {
           </p>
         </div>
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 -mb-52">
-          {PRODUCT_HIGHLIGHTS_DEMO.map((highlight, index) => (
+          {PRODUCT_HIGHLIGHTS_LIST.map((highlight, index) => (
             <ProductHighlightCard
               key={index}
               title={highlight.title}
