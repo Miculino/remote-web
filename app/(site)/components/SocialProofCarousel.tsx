@@ -35,11 +35,13 @@ type CompanyTypes =
 
 export default function SocialProofCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [isLargeScreen, setIsLargeScreen] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
+      if (typeof window !== undefined) {
+        setIsLargeScreen(window.innerWidth >= 1024);
+      }
     };
 
     window.addEventListener("resize", handleResize);
