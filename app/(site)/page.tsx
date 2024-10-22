@@ -6,6 +6,7 @@ import ProductHighlightDemo from "./layout/ProductHighlights";
 import ExplorePlatform from "./layout/ExplorePlatform";
 import GlobalHRLibrary from "./layout/GlobalHRLibrary";
 import ComparePlatform from "./layout/ComparePlatform";
+import Integrations from "./layout/Integrations";
 import Footer from "./layout/Footer";
 
 // Components
@@ -22,6 +23,7 @@ export default function Home() {
       <ExplorePlatform />
       <GlobalHRLibrary />
       <ComparePlatform />
+      <Integrations />
       <Footer />
     </>
   );
