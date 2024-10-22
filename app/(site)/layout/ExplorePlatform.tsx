@@ -31,7 +31,12 @@ export default function ExplorePlatform() {
             experience they deserve.
           </p>
         </div>
-        <Button intent="primary" label="Explore the Platform" arrow />
+        <Button
+          intent="primary"
+          label="Explore the Platform"
+          arrow
+          arrowPathStrokes="var(--foreground)"
+        />
       </div>
       <div className="flex-1 flex flex-col gap-2">
         {PLATFORM_CORE_FEATURES_LIST.map((coreFeature, index) => (

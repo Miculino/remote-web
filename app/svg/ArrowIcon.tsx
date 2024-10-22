@@ -1,3 +1,5 @@
+"use client";
+
 // React
 import { SVGProps } from "react";
 // CLSX

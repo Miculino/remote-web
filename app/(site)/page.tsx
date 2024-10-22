@@ -4,6 +4,7 @@ import SocialProof from "./layout/SocialProof";
 import ProductShowcase from "./layout/ProductShowcase";
 import ProductHighlightDemo from "./layout/ProductHighlights";
 import ExplorePlatform from "./layout/ExplorePlatform";
+import ComparePlatform from "./layout/ComparePlatform";
 
 // Components
 import GlobalCompanies from "./components/GlobalCompanies";
@@ -17,6 +18,7 @@ export default function Home() {
       <ProductShowcase />
       <ProductHighlightDemo />
       <ExplorePlatform />
+      <ComparePlatform />
     </>
   );
 }
