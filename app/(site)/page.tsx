@@ -5,6 +5,7 @@ import ProductShowcase from "./layout/ProductShowcase";
 import ProductHighlightDemo from "./layout/ProductHighlights";
 import ExplorePlatform from "./layout/ExplorePlatform";
 import ComparePlatform from "./layout/ComparePlatform";
+import Footer from "./layout/Footer";
 
 // Components
 import GlobalCompanies from "./components/GlobalCompanies";
@@ -19,6 +20,7 @@ export default function Home() {
       <ProductHighlightDemo />
       <ExplorePlatform />
       <ComparePlatform />
+      <Footer />
     </>
   );
 }
