@@ -69,44 +69,46 @@ export default function PlatformCoreFeature({
   };
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className={clsx(
-        platformCoreFeatureStyle({ feature }),
-        "relative p-6 py-8 overflow-hidden cursor-pointer"
-      )}
-    >
-      <div className="flex flex-col gap-1">
-        <h4 className="font-crimson font-semibold text-lg">{title}</h4>
-        <p className="font-poppins">{description}</p>
-      </div>
-      <div className="absolute top-0 left-0 w-full h-full p-6 py-8 bg-inherit opacity-0 hover:opacity-100 flex justify-between items-center gap-4">
-        <div
-          className={clsx(
-            isHovered
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-2 opacity-0",
-            "transition-all duration-500"
-          )}
-        >
-          <object data={illustration} />
-        </div>
-        <div
-          className={clsx(
-            "flex flex-col gap-1 text-white transition-all duration-500",
-            isHovered ? "translate-x-0 opacity-100" : "translate-x-2 opacity-0"
-          )}
-        >
+    <Link href={url}>
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className={clsx(
+          platformCoreFeatureStyle({ feature }),
+          "relative p-6 py-8 overflow-hidden cursor-pointer"
+        )}
+      >
+        <div className="flex flex-col gap-1">
           <h4 className="font-crimson font-semibold text-lg">{title}</h4>
           <p className="font-poppins">{description}</p>
         </div>
-      </div>
-      <Link className="absolute top-6 right-6" href={url}>
+        <div className="absolute top-0 left-0 w-full h-full p-6 py-8 bg-inherit opacity-0 hover:opacity-100 flex justify-between items-center gap-4">
+          <div
+            className={clsx(
+              isHovered
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-2 opacity-0",
+              "transition-all duration-500"
+            )}
+          >
+            <object data={illustration} />
+          </div>
+          <div
+            className={clsx(
+              "flex flex-col gap-1 text-white transition-all duration-500",
+              isHovered
+                ? "translate-x-0 opacity-100"
+                : "translate-x-2 opacity-0"
+            )}
+          >
+            <h4 className="font-crimson font-semibold text-lg">{title}</h4>
+            <p className="font-poppins">{description}</p>
+          </div>
+        </div>
         <ArrowIcon
           className={clsx(
             isHovered ? "rotate-0" : "-rotate-45",
-            "transition-all duration-500"
+            "transition-all duration-500 absolute top-6 right-6"
           )}
           pathStrokes={
             isHovered
@@ -114,7 +116,7 @@ export default function PlatformCoreFeature({
               : platformCoreFeatureArrowStyle({ feature })
           }
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
