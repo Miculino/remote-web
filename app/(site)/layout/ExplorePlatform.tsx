@@ -14,7 +14,7 @@ type FeatureTypes =
 
 export default function ExplorePlatform() {
   return (
-    <section className="bg-gray-200 pt-72 pb-28 lg:pt-96 text-black flex flex-col px-5 lg:pb-40 gap-10 lg:px-56">
+    <section className="bg-gray-200 pt-72 pb-28 lg:pt-96 text-black flex flex-col lg:flex-row px-5 lg:pb-40 gap-10 lg:px-56">
       <div className="flex-1 flex flex-col gap-6">
         <div className="flex flex-col gap-7">
           <Subheading>The global HR platform you deserve</Subheading>
