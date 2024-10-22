@@ -12,7 +12,7 @@ type FeatureTypes =
 
 export default function BentoGrid() {
   return (
-    <div className="grid grid-cols-16">
+    <div className="grid grid-cols-1 lg:grid-cols-16 gap-5 -mb-32">
       {HR_LIBRARY_LIST.map((hrItem, index) => (
         <ProductHighlightCard
           key={index}

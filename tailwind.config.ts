@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "payroll-radial":
-          "radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 60%, rgb(0, 181, 104) 100%)",
+          "radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255, 0.1) 100%)",
       },
       colors: {
         background: "var(--background)",
@@ -49,6 +49,9 @@ const config: Config = {
       fontFamily: {
         poppins: "var(--font-poppins)",
         crimson: "var(--font-crimson)",
+      },
+      gridRow: {
+        "12-16": "12 / 16",
       },
       gridTemplateColumns: {
         "16": "repeat(16, minmax(0, 1fr))",
