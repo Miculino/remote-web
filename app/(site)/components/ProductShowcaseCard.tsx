@@ -22,17 +22,28 @@ interface ProductHighlightCardProps {
   url: string;
   title: string;
   description: string;
-  illustration: string;
-  benefits: string[];
-  feature: "payroll" | "employer-of-record";
+  illustration: string | null;
+  benefits: string[] | null;
+  feature:
+    | "payroll"
+    | "employer-of-record"
+    | "research"
+    | "blog"
+    | "employee-cost-calculator"
+    | "country-explorer"
+    | "misclassification-risk-tool";
 }
 
 const productHighlightCardBg = cva("", {
   variants: {
     feature: {
-      payroll: "bg-payroll hover:bg-payroll/10",
-      "employer-of-record":
-        "bg-employer-of-record hover:bg-employer-of-record/10",
+      payroll: "bg-payroll",
+      "employer-of-record": "bg-employer-of-record ",
+      research: "bg-research",
+      blog: "bg-blog",
+      "employee-cost-calculator": "bg-employee-cost-calculator",
+      "country-explorer": "bg-country-explorer",
+      "misclassification-risk-tool": "bg-misclassification-risk-tool",
     },
   },
 });
@@ -84,22 +95,26 @@ export default function ProductHighlightCard({
         />
       </div>
       <p className="text-base relative z-1">{description}</p>
-      <ul className="flex flex-wrap gap-4 mt-4 text-base">
-        {benefits.map((benefit, index) => (
-          <ListItem key={index} label={benefit} />
-        ))}
-      </ul>
-      <div
-        className={clsx(
-          "max-h-52 mt-auto relative z-1 transition-all duration-500",
-          isHovered ? "translate-y-[10%]" : "translate-y-[15%]"
-        )}
-      >
-        <object
-          className={clsx("mx-auto  w-full h-auto")}
-          data={illustration}
-        />
-      </div>
+      {benefits ? (
+        <ul className="flex flex-wrap gap-4 mt-4 text-base">
+          {benefits.map((benefit, index) => (
+            <ListItem key={index} label={benefit} />
+          ))}
+        </ul>
+      ) : null}
+      {illustration ? (
+        <div
+          className={clsx(
+            "max-h-52 mt-auto relative z-1 transition-all duration-500",
+            isHovered ? "translate-y-[10%]" : "translate-y-[15%]"
+          )}
+        >
+          <object
+            className={clsx("mx-auto  w-full h-auto")}
+            data={illustration}
+          />
+        </div>
+      ) : null}
     </Link>
   );
 }

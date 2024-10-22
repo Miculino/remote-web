@@ -40,13 +40,22 @@ const config: Config = {
         "contractor-management": "var(--contractor-management)",
         "remote-talent": "var(--remote-talent)",
         "remote-apis": "var(--remote-apis)",
+        research: "var(--research)",
+        "employee-cost-calculator": "var(--employee-cost-calculator)",
+        "country-explorer": "var(--country-explorer)",
+        "misclassification-risk-tool": "var(--misclassification-risk-tool)",
+        blog: "var(--blog)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",
         crimson: "var(--font-crimson)",
       },
+      gridTemplateColumns: {
+        "16": "repeat(16, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

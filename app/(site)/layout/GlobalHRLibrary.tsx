@@ -4,7 +4,7 @@ import Subheading from "../components/Subheading";
 
 export default function GlobalHRLibrary() {
   return (
-    <section className="px-5 md:px-10 lg:px-56 bg-gray-300 pt-40 flex flex-col gap-10">
+    <section className="px-5 md:px-10 lg:px-56 bg-gray-300 pt-40 flex flex-col gap-10 text-dark-blue">
       <div className="flex flex-col md:flex-row justify-between items-start">
         <Subheading>Browse our global HR library</Subheading>
         <p>

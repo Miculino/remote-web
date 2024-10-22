@@ -1,22 +1,29 @@
+import { HR_LIBRARY_LIST } from "@/app/constants/hrLibraryList";
+import ProductHighlightCard from "./ProductShowcaseCard";
+
+type FeatureTypes =
+  | "payroll"
+  | "employer-of-record"
+  | "research"
+  | "blog"
+  | "employee-cost-calculator"
+  | "country-explorer"
+  | "misclassification-risk-tool";
+
 export default function BentoGrid() {
   return (
-    <div className="grid grid-cols-[16]">
-      <div>Grid 1</div>
-      <div>Grid 2</div>
-      <div>Grid 3</div>
-      <div>Grid 4</div>
-      <div>Grid 5</div>
-      <div>Grid 6</div>
-      <div>Grid 7</div>
-      <div>Grid 8</div>
-      <div>Grid 9</div>
-      <div>Grid 10</div>
-      <div>Grid 11</div>
-      <div>Grid 12</div>
-      <div>Grid 13</div>
-      <div>Grid 14</div>
-      <div>Grid 15</div>
-      <div>Grid 16</div>
+    <div className="grid grid-cols-16">
+      {HR_LIBRARY_LIST.map((hrItem, index) => (
+        <ProductHighlightCard
+          key={index}
+          title={hrItem.title}
+          description={hrItem.description}
+          url={hrItem.url}
+          illustration={hrItem.illustration}
+          feature={hrItem.feature as FeatureTypes}
+          benefits={hrItem.benefits}
+        />
+      ))}
     </div>
   );
 }
