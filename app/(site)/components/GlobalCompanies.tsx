@@ -8,7 +8,7 @@ export default function GlobalCompanies() {
   return (
     <div
       title="Global companies grow with Remote"
-      className="bg-dark-gray py-5 flex flex-col gap-8"
+      className="bg-dark-gray p-5 flex flex-col gap-8"
     >
       <p className="text-slate-500 text-lg text-center">
         Global companies grow with Remote
