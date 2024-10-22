@@ -22,8 +22,8 @@ export default function Home() {
       <ProductHighlightDemo />
       <ExplorePlatform />
       <GlobalHRLibrary />
-      <ComparePlatform />
       <Integrations />
+      <ComparePlatform />
       <Footer />
     </>
   );

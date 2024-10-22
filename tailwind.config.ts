@@ -45,6 +45,10 @@ const config: Config = {
         "country-explorer": "var(--country-explorer)",
         "misclassification-risk-tool": "var(--misclassification-risk-tool)",
         blog: "var(--blog)",
+        gusto: "var(--gusto)",
+        bamboohr: "var(--bamboohr)",
+        greenhouse: "var(--greenhouse)",
+        zapier: "var(--zapier)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",
