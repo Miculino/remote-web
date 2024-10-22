@@ -15,6 +15,7 @@
     --primary-hover: #5079f9;
     --dark-blue: #00234b;
     --secondary: #fff;
+    --secondary-hover: #fff;
     --dark-gray: #e4e8ec;
     --purple-blue: #3d1b7e;
     --dark-navy: #00234b;
@@ -45,6 +46,7 @@
     --bamboohr: #599d15;
     --greenhouse: #23a57f;
     --zapier: #f74e02;
+    --footer: #5a05ff;
   }
 }
 

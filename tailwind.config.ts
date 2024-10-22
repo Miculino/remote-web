@@ -18,6 +18,7 @@ const config: Config = {
         primary: "var(--primary)",
         "primary-hover": "var(--primary-hover)",
         secondary: "var(--secondary)",
+        "secondary-hover": "var(--secondary-hover)",
         "dark-gray": "var(--dark-gray)",
         "dark-blue": "var(--dark-blue)",
         semrush: "var(--purple-blue)",
@@ -49,6 +50,7 @@ const config: Config = {
         bamboohr: "var(--bamboohr)",
         greenhouse: "var(--greenhouse)",
         zapier: "var(--zapier)",
+        footer: "var(--footer)",
       },
       fontFamily: {
         poppins: "var(--font-poppins)",
