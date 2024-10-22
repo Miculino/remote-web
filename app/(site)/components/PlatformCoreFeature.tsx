@@ -85,6 +85,7 @@ export default function PlatformCoreFeature({
         <div className="absolute top-0 left-0 w-full h-full p-6 py-8 bg-inherit opacity-0 hover:opacity-100 flex justify-between items-center gap-4">
           <div
             className={clsx(
+              "hidden md:block",
               isHovered
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-2 opacity-0",
