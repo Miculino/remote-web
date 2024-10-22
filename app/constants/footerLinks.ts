@@ -1,4 +1,4 @@
-export const FOOTER_LINKS = [
+export const FOOTER_PRIMARY_LINKS = [
   {
     title: "Solutions",
     links: [
@@ -270,5 +270,28 @@ export const FOOTER_LINKS = [
         url: "https://remote.com/partners/join-recruiter-network",
       },
     ],
+  },
+];
+
+export const FOOTER_SECONDARY_LINKS = [
+  {
+    label: "Privacy Policy",
+    url: "https://remote.com/privacy-policy",
+  },
+  {
+    label: "Cookie Policy",
+    url: "https://remote.com/cookie-policy",
+  },
+  {
+    label: "Terms of Use",
+    url: "https://remote.com/terms-of-use",
+  },
+  {
+    label: "Disclaimer",
+    url: "https://remote.com/disclaimer",
+  },
+  {
+    label: "Imprint",
+    url: "https://remote.com/imprint",
   },
 ];
