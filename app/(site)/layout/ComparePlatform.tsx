@@ -4,7 +4,7 @@ import Subheading from "../components/Subheading";
 
 export default function ComparePlatform() {
   return (
-    <section className="bg-gray-200 text-dark-blue px-5 md:px-10 lg:px-56 flex flex-col lg:flex-row gap-10 md:gap-32">
+    <section className="bg-gray-200 text-dark-blue p-5 md:p-10 lg:px-56 lg:py-40 flex flex-col lg:flex-row gap-10 md:gap-32">
       <div className="flex-1 flex flex-col gap-7">
         <Subheading>The #1 global HR platform as voted by you</Subheading>
         <p>
