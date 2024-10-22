@@ -26,7 +26,7 @@ export default function ExplorePlatform() {
           <p className="font-poppins text-base">
             Enjoy the ultimate flexibility by managing all your global HR with
             Remote. EOR employees in Estonia? Payroll in Peru? Contractors in
-            Costa Rica? It's all in one place, so you can spend less time
+            Costa Rica? It&apos;s all in one place, so you can spend less time
             tracking down documents and more time giving your global team the
             experience they deserve.
           </p>
