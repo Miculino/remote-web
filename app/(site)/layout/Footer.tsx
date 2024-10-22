@@ -21,15 +21,15 @@ export default function Footer() {
           height={29}
         />
       </div>
-      <div className="lg:py-20 lg:px-32 flex flex-col justify-center gap-10">
-        <div className="flex flex-col justify-center items-center gap-4 mb-40">
+      <div className="py:10 md:py-20 lg:py-30 md:px-10 lg:px-20 flex flex-col justify-center gap-10">
+        <div className="flex flex-col justify-center items-center gap-4 mb-10 lg:mb-40">
           <h3 className="text-white font-semibold text-[min(48px,21px_+_1.56vw)] font-crimson">
             Grow further with Remote
           </h3>
           <Button label="Show all plans" arrow intent={"secondary"} />
         </div>
         <FooterLinks />
-        <div className="flex flex-col md:flex-row gap-3 justify-center">
+        <div className="flex gap-3 justify-center">
           <Link
             href={
               "https://apps.apple.com/app/apple-store/id1613496903?pt=122685638&ct=Remote.com&mt=8"
@@ -58,14 +58,14 @@ export default function Footer() {
         <p className="text-xs opacity-20 -mb-5">
           Copyright © 2024. Remote Technology, Inc. All rights reserved.
         </p>
-        <div className="border-t border-t-white/20 p-2 flex items-center justify-between gap-8">
+        <div className="border-t border-t-white/20 p-2 flex items-center justify-between gap-8 flex-wrap">
           <Image
             src="/Cookie.svg"
             alt="Manage Cookies Preferences"
             width={54}
             height={54}
           />
-          <div className="flex items-center gap-6 text-xs">
+          <div className="flex flex-wrap justify-center items-center gap-6 text-xs">
             {FOOTER_SECONDARY_LINKS.map(({ label, url }, index) => (
               <Link
                 className="max-w-fit rounded-full hover:bg-white hover:text-footer py-1 px-2"
