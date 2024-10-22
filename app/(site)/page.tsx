@@ -4,6 +4,7 @@ import SocialProof from "./layout/SocialProof";
 import ProductShowcase from "./layout/ProductShowcase";
 import ProductHighlightDemo from "./layout/ProductHighlights";
 import ExplorePlatform from "./layout/ExplorePlatform";
+import GlobalHRLibrary from "./layout/GlobalHRLibrary";
 import ComparePlatform from "./layout/ComparePlatform";
 import Footer from "./layout/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <ProductShowcase />
       <ProductHighlightDemo />
       <ExplorePlatform />
+      <GlobalHRLibrary />
       <ComparePlatform />
       <Footer />
     </>
